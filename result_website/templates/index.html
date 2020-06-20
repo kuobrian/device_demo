@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<!--
+	Full Motion by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>ITRI-LPD</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="/static/assets/css/main.css" />
+
+	</head>
+	<body id="top">
+
+			<!-- Banner -->
+			<!--
+				To use a video as your background, set data-video to the name of your video without
+				its extension (eg. images/banner). Your video must be available in both .mp4 and .webm
+				formats to work correctly.
+			-->
+				<section id="banner" data-video="{{url_for('static', filename='image/banner')}}">
+					<div class="inner">
+						<header>
+							<h1>License Plate Detection</h1>
+							<p>Show the last 6 images with license plate and license numbers<br />
+						</header>
+						<a href="#main" class="more">Learn More</a>
+					</div>
+				</section>
+				
+			<!-- Main -->
+				<div id="main">
+					<div class="inner">
+
+					<!-- Boxes -->
+						<div class="thumbnails">
+							<div class="box">
+								<a href="{{ image_name[0] }}" class="image fit"><img src="{{ image_name[0] }}" height="280" alt="" /></a>
+								<div class="inner">
+									<h4>{{ result_time[0] }}</h4>
+									<h2>{{ result_array[0] }}</h2>
+									<a href="{{ image_name[0] }}" class="button fit" data-poptrox="image,800x400">Watch</a>
+								</div>
+							</div>
+
+							<div class="box">
+								<a href="{{ image_name[1] }}" class="image fit"><img src="{{ image_name[1] }}" height="280" alt="" /></a>
+								<div class="inner">
+									<h4>{{ result_time[1] }}</h4>
+									<h2>{{ result_array[1] }}</h2>
+									<a href="{{ image_name[1] }}" class="button style2 fit" data-poptrox="image,800x400">Watch</a>
+								</div>
+							</div>
+
+							<div class="box">
+								<a href="{{ image_name[2] }}" class="image fit"><img src="{{ image_name[2] }}" height="280" alt="" /></a>
+								<div class="inner">
+									<h4>{{ result_time[2] }}</h4>
+									<h2>{{ result_array[2] }}</h2>
+									<a href="{{ image_name[2] }}" class="button style3 fit" data-poptrox="image,800x400">Watch</a>
+								</div>
+							</div>
+
+							<div class="box">
+								<a href="{{ image_name[3] }}" class="image fit"><img src="{{ image_name[3] }}" height="280" alt="" /></a>
+								<div class="inner">
+									<h4>{{ result_time[3] }}</h4>
+									<h2>{{ result_array[3] }}</h2>
+									<a href="{{ image_name[3] }}" class="button style2 fit" data-poptrox="image,800x400">Watch</a>
+								</div>
+							</div>
+
+							<div class="box">
+								<a href="{{ image_name[4] }}" class="image fit"><img src="{{ image_name[4] }}" height="280" alt="" /></a>
+								<div class="inner">
+									<h4>{{ result_time[4] }}</h4>
+									<h2>{{ result_array[4] }}</h2>
+									<a href="{{ image_name[4] }}" class="button style3 fit" data-poptrox="image,800x400">Watch</a>
+								</div>
+							</div>
+
+							<div class="box">
+								<a href="{{ image_name[5] }}" class="image fit"><img src="{{ image_name[5] }}" height="280" alt="" /></a>
+								<div class="inner">
+									<h4>{{ result_time[5] }}</h4>
+									<h2>{{ result_array[5] }}</h2>
+									<a href="{{ image_name[5] }}" class="button fit" data-poptrox="image,800x400">Watch</a>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<h2>Etiam veroeros lorem</h2>
+						<p>Pellentesque eleifend malesuada efficitur. Curabitur volutpat dui mi, ac imperdiet dolor tincidunt nec. Ut erat lectus, dictum sit amet lectus a, aliquet rutrum mauris. Etiam nec lectus hendrerit, consectetur risus viverra, iaculis orci. Phasellus eu nibh ut mi luctus auctor. Donec sit amet dolor in diam feugiat venenatis. </p>
+
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com/">Unsplash</a>. Videos: <a href="http://coverr.co/">Coverr</a>.</p>
+					</div>
+				</footer>
+
+		<!-- Scripts -->
+			<script src="/static/assets/js/jquery.min.js"></script>
+			<script src="/static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/static/assets/js/jquery.poptrox.min.js"></script>
+			<script src="/static/assets/js/skel.min.js"></script>
+			<script src="/static/assets/js/util.js"></script>
+			<script src="/static/assets/js/main.js"></script>
+
+	</body>
+</html>
